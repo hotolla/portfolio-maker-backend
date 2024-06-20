@@ -1,0 +1,19 @@
+{
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "max-len": [ "warn", { "code": 120 } ],
+    "array-bracket-spacing": [ "warn", "always" ],
+    "object-curly-spacing": [ "warn", "always" ],
+    "semi": "warn",
+    "no-alert": "warn",
+    "no-console": "warn",
+    "no-debugger": "warn",
+    "comma-dangle": [ "warn", "never" ],
+    "quotes": [ "warn", "single" ],
+    "arrow-parens": [ "warn", "always" ]
+  }
+}
+

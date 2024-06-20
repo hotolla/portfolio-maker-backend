@@ -1,0 +1,28 @@
+{
+  "name": "portfolio-maker-backend",
+  "version": "1.0.0",
+  "description": "backend for Portfolio Maker project",
+  "main": "app.js",
+  "author": "Olha Koltsova",
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "serve": "nodemon app.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.0.0",
+    "mongoose": "^8.4.3",
+    "multer": "^1.4.5-lts.1",
+    "socket.io": "^4.7.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.53.0"
+  }
+}
