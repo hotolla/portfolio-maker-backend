@@ -1,4 +1,4 @@
-import { showUser } from '../users/users.service.js';
+import { showUser } from './users.service.js';
 
 export const fetchUser = async (req, res) => {
   try {
@@ -12,4 +12,3 @@ export const fetchUser = async (req, res) => {
     res.status(500).json({ message: 'Internal Server Error' });
   }
 };
-

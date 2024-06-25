@@ -1,6 +1,7 @@
 import { User } from './user.model.js';
 
 export const addUser = (user) => {
+  console.log('addUser', user)
   try {
     return User.create(user);
   } catch (error) {
