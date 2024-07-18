@@ -3,9 +3,12 @@ import { compareSync } from 'bcrypt';
 import { addUser, findUser } from '../users/users.service.js';
 import { AppError } from '../../helpers/app-error.js';
 
-export const register = (user) => {
-  console.log('register', user)
-  return addUser(user);
+export const register = async (user) => {
+  const verifiedUser = await findUser({ 'email': user.email} );
+
+  if (!verifiedUser) {
+    return addUser(user);
+  }
 };
 
 export const login = async ({ email, password }) => {
